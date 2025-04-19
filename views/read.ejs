@@ -9,7 +9,7 @@
 </head>
 <body class="bg-zinc-900">
     <div class="w-full h-full bg-zinc-900 p-10 text-white">
-        <a href="/" class="text-blue-500">back to home</a>
+        <a href="/" class="text-blue-500">Back to home</a>
         <h1 class="text-3xl tracking-tighter mb-3 mt-10">Available pg</h1>
         <div class="users flex gap-3 flex-wrap">
             <% if (users.length>0){%>
@@ -17,9 +17,9 @@
                     <div class="user w-full p-4 bg-zinc-800 rounded-lg">
                         <div class="flex gap-20">
                             <div class="w-full h-52 rounded-lg bg-zinc-500">
-                                <img class="w-full h-full objec-cover" src="<%= user.common %>" alt=""></div>
+                                <img class="w-full h-full object-cover" src="<%= user.common %>" alt=""></div>
                             <div class="w-full h-52 rounded-lg bg-zinc-500">
-                                <img class="w-full h-full objec-cover" src="<%= user.rooms %>" alt=""></div>
+                                <img class="w-full h-full object-cover" src="<%= user.rooms %>" alt=""></div>
                         </div>        
                         <h3 class="text-xl mt-3 tracking-tighter"><%= user.name %></h3>
                         <h3 class="text-xl mt-3 tracking-tighter"><%= user.email %></h3>

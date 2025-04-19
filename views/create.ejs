@@ -9,20 +9,49 @@
 </head>
 <body>
     <div class="w-full h-full bg-zinc-900 p-10 text-white">
-        <h1 class="text-3xl tracking-tighter mb-3">Create User</h1>
-        <form action="/create" method="post">
-            <input type="text" class="px-5 py-3 border-2 border-zinc-800 outline-none rounded-lg bg-transparent" placeholder="Enter ur locality" name="locality" required>
-            <input type="text" class="px-5 py-3 border-2 border-zinc-800 outline-none rounded-lg bg-transparent" placeholder="enter ur name" name="name" required>
-            <input type="text" class="px-5 py-3 border-2 border-zinc-800 outline-none rounded-lg bg-transparent" placeholder="enter ur email" name="email" required>
-            <input type="text" class="px-5 py-3 border-2 border-zinc-800 outline-none rounded-lg bg-transparent" placeholder="commmon area pics" name="common" required>
-            <input type="text" class="px-5 py-3 border-2 border-zinc-800 outline-none rounded-lg bg-transparent" placeholder="available room pics" name="rooms" required>
-            <input type="text" class="px-5 py-3 border-2 border-zinc-800 outline-none rounded-lg bg-transparent" placeholder="enter fees" name="fees" required>
-            <input type="text" class="px-5 py-3 border-2 border-zinc-800 outline-none rounded-lg bg-transparent" placeholder="enter ur contact no." name="contact" required>
-            <input type="text" class="px-5 py-3 border-2 border-zinc-800 outline-none rounded-lg bg-transparent" placeholder="other details" name="other">
-            <input type="text" class="px-5 py-3 border-2 border-zinc-800 outline-none rounded-lg bg-transparent" placeholder="password" name="password" required>
+        <h1 class="text-3xl font-serif">Welcome to Homez Delight!</h1>
 
-            <input type="submit" class="px-5 py-2 bg-blue-500 rounded-lg ml-3" value="Create user">
+        <h1 class="text-3xl tracking-tighter mb-3">Create User</h1>
+        <div class="mb-5 p-5 bg-zinc-800 rounded-lg shadow-lg">
+            <div>
+            <p class="text-lg">Please fill in the details below to create a new user account.</p>
+        </div>
+        <form action="/create" method="POST" class="space-y-3">
+            <div class="flex flex-row mt-5">
+                <div class="flex align-center justify-center mr-5 ">
+            <label for="name" class="block text-sm font-medium">Name: </label>
+            <input type="text" id="name" name="name" class="w-5/5 p-2 rounded bg-zinc-700 text-white" required>
+            </div>
+            <div class="flex align-center justify-center mr-5">
+            <label for="email" class="block text-sm font-medium">Email: </label>
+            <input type="email" id="email" name="email" class="w-5/5 p-2 rounded bg-zinc-700 text-white" required>
+            </div>
+            <div class="flex align-center justify-center mr-5">
+            <label for="password" class="block text-sm font-medium">Password: </label>
+            <input type="password" id="password" name="password" class="w-5/5 p-2 rounded bg-zinc-700 text-white" required>
+            </div>
+            </div>
+            <div>
+            <label for="locality" class="block text-sm font-medium">Locality: </label>
+            <input type="text" id="locality" name="locality" class="w-1/5 p-2 rounded bg-zinc-700 text-white" required>
+            </div>
+            <div>
+            <label for="details" class="block text-sm font-medium">Details: </label>
+            <textarea id="details" name="details" class="w-1/5 p-2 rounded bg-zinc-700 text-white" rows="3" required></textarea>
+            </div>
+            <div>
+            <label for="imgUrl1" class="block text-sm font-medium">Available rooms: </label>
+            <input type="url" id="imgUrl1" name="imgUrl1" class="w-1/5 p-2 rounded bg-zinc-700 text-white" required>
+            </div>
+            <div>
+            <label for="imgUrl2" class="block text-sm font-medium">Area details: </label>
+            <input type="url" id="imgUrl2" name="imgUrl2" class="w-1/5 p-2 rounded bg-zinc-700 text-white" required>
+            </div>
+            <button type="submit" class="px-4 py-2 bg-blue-600 rounded text-white hover:bg-blue-700">Create User</button>
         </form>
     </div>
+    </div>
+
+    <script src="/javascripts/script.js"></script>
 </body>
 </html>
